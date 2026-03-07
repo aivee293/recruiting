@@ -9,13 +9,13 @@ The toolkit divides recruiting into two agent domains, split at the pipeline han
 ```
  SOURCING DOMAIN                          TALENT PARTNER DOMAIN
  Identified → Interested                  Screening → Offer → Close
- ┌──────────────────────────┐             ┌────────────────────────────────┐
+ ┌───────────────────────────┐             ┌────────────────────────────────┐
  │ senior-sourcing-specialist│             │ senior-talent-partner          │
  │ persona-builder           │             │ interview-architect            │
  │ lead-researcher           │      ──►    │ evaluation-specialist          │
  │ outreach-specialist       │             │ offer-strategist               │
  │                           │             │ hiring-quality-analyst         │
- └──────────────────────────┘             └────────────────────────────────┘
+ └───────────────────────────┘             └────────────────────────────────┘
 
  Pipeline stages:
  Identified → Contacted → Responded → Interested → Screening → Submitted to HM → Interview → Offer
