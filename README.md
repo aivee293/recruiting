@@ -1,6 +1,6 @@
 # Recruiting Toolkit
 
-A talent sourcing and recruiting orchestration system built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code). 11 specialized AI agents and 16 skills produce hiring deliverables across the full candidate pipeline — job descriptions, candidate personas, Boolean search strings, outreach sequences, interview scorecards, offer strategies, and post-close retrospectives. All output is markdown or self-contained HTML. No build tools, no dependencies.
+A talent sourcing and recruiting orchestration system built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code). 11 specialized AI agents and 16 skills produce hiring deliverables across the full candidate pipeline: job descriptions, candidate personas, Boolean search strings, outreach sequences, interview scorecards, offer strategies, and post-close retrospectives. All output is markdown or self-contained HTML. No build tools, no dependencies.
 
 ## How It Works
 
@@ -111,7 +111,7 @@ Skills are domain knowledge modules that auto-inject into agents via YAML frontm
 
 ### Prerequisites
 
-- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) with an active subscription or API key
+- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) with an active subscription or API key or Claude Desktop
 
 That's it. No npm, pip, or build step.
 
