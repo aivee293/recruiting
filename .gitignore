@@ -1,0 +1,8 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Claude Code local settings (user-specific, not for sharing)
+.claude/*.local.md
+.claude/*.local.json
