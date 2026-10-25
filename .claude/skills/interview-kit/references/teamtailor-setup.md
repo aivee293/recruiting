@@ -36,7 +36,7 @@ Teamtailor has three evaluation surfaces. Use two, skip one.
 | Skills | Blue | Role-specific. Change per job. | Track Record, Discovery & Value Selling, System Design |
 | Traits | Yellow | Company-wide. Same across all jobs. | Trust, Curiosity, Impact (your Culture Code values) |
 
-Define traits once in Teamtailor and reuse across all jobs. Skills are created per role based on the job's competency model. Source trait definitions, positive behaviors, and anti-patterns from `your culture code deck`.
+Define traits once in Teamtailor and reuse across all jobs. Skills are created per role based on the job's competency model. Source trait definitions, positive behaviors, and anti-patterns from the culture/values deck referenced by `culture-value-deck` in `.claude/talent-sourcing.local.md`.
 
 **Overlap rules (skills vs traits):**
 
@@ -169,7 +169,7 @@ One kit per stage. If a stage has multiple interviewers (e.g., panel), they shar
 
 ## Rating Scale
 
-Use Teamtailor's 1-5 scale (see `scorecard-templates.md` for the full rubric):
+Use Teamtailor's 1-5 scale (see `scorecard-templates.md` for the rating scale):
 
 | Rating | Label | Meaning |
 |--------|-------|---------|

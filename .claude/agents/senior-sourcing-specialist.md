@@ -1,6 +1,6 @@
 ---
 name: senior-sourcing-specialist
-description: "Use this agent proactively when recruiting or sourcing tasks are detected. This is the primary sourcing agent that orchestrates the full sourcing workflow, does the actual sourcing work, and delegates to specialist agents when needed.
+description: "Use this agent for multi-step sourcing deliverables (JD, sourcing plan, talent map, full search-string set) for a role. Quick single edits are handled inline with the matching skill instead. This is the primary sourcing agent that orchestrates the full sourcing workflow, does the actual sourcing work, and delegates to specialist agents when needed.
  Examples:
 
   <example>
@@ -8,7 +8,7 @@ description: "Use this agent proactively when recruiting or sourcing tasks are d
   user: We need to hire a Senior Data Engineer for the Berlin office
   assistant: I'll engage the senior sourcing specialist to develop a comprehensive sourcing strategy for this role.
   <commentary>
-  The user has described a hiring need. The senior sourcing specialist should proactively activate to begin the sourcing process - defining the persona, mapping the talent landscape, building search strings, and creating a sourcing plan.
+  The user has described a hiring need. The senior sourcing specialist begins the sourcing process - defining the persona, mapping the talent landscape, building search strings, and creating a sourcing plan.
   </commentary>
   </example>
 

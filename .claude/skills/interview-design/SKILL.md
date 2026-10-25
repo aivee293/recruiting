@@ -1,6 +1,6 @@
 ---
 name: interview-design
-description: "This skill should be used when the user asks to design interview process, interview stages, interview structure, assessment plan, interview flow, how many rounds, interview pipeline, what interviews to run, stage design, or needs to architect a multi-stage interview process for any role family or seniority level."
+description: "Design the overall interview process for a role: how many stages, which formats (screen, technical, case, panel), who interviews, and which competencies each stage covers. Use when the user asks how to structure interviews for a role. Not for writing the questions or scorecards for a stage (use interview-kit)."
 ---
 
 # Interview Design for Recruiting
@@ -197,7 +197,7 @@ When generating an interview plan for a role, produce this structure and save to
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/format-library.md`** — Detailed descriptions of each interview format with strengths, weaknesses, when to use, when to avoid, and implementation tips.
 - **`references/process-templates.md`** — Complete process templates by role family and seniority level with competency mappings, timelines, and interviewer assignment guidance.

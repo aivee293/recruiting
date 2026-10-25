@@ -1,6 +1,6 @@
 ---
 name: senior-talent-partner
-description: "Use this agent proactively when mid-to-bottom funnel recruiting tasks are detected — screening, interview process design, candidate evaluation, offer management, hiring decisions, onboarding, or post-close activities. This is the primary recruiting agent that orchestrates the talent partner workflow from Screening through Offer and post-close.
+description: "Use this agent for multi-step mid-to-bottom funnel recruiting work — screening, interview process design, candidate evaluation, offer management, hiring decisions, onboarding, or post-close activities. This is the primary recruiting agent that orchestrates the talent partner workflow from Screening through Offer and post-close.
  Examples:
 
   <example>

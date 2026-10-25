@@ -1,6 +1,6 @@
 ---
 name: sourcing-plan
-description: Create a comprehensive sourcing strategy for a role - channels, communities, keywords, target companies
+description: "Produce an end-to-end sourcing strategy for one role: prioritized channels, communities, keywords, target companies, search approach, weekly timeline, and success metrics. Use when the user asks for a sourcing plan or how to start sourcing a role. Pulls in search strings and company targets but does not replace boolean-search or talent-mapping for deep work on either."
 ---
 
 # Sourcing Plan Generator

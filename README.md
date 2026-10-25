@@ -1,6 +1,6 @@
 # Recruiting Toolkit
 
-A talent sourcing and recruiting orchestration system built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code). 11 specialized AI agents and 16 skills produce hiring deliverables across the full candidate pipeline: job descriptions, candidate personas, Boolean search strings, outreach sequences, interview scorecards, offer strategies, and post-close retrospectives. All output is markdown or self-contained HTML. No build tools, no dependencies.
+A talent sourcing and recruiting orchestration system built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code). 11 specialized AI agents and 15 skills produce hiring deliverables across the full candidate pipeline: job descriptions, candidate personas, Boolean search strings, outreach sequences, interview scorecards, offer strategies, and post-close retrospectives. All output is markdown or self-contained HTML. No build tools, no dependencies.
 
 ## How It Works
 
@@ -32,11 +32,11 @@ Your Claude Code session is the orchestrator. It launches agents directly, runs 
 recruiting/
 ├── .claude/
 │   ├── agents/              # 11 agent definitions (YAML frontmatter + markdown body)
-│   ├── skills/              # 16 skill modules (each has SKILL.md + references/)
+│   ├── skills/              # 15 skill modules (each has SKILL.md + references/)
 │   ├── rules/               # Orchestration rules, anti-AI-slop rules
 │   ├── templates/           # brief.md intake template
 │   ├── data/                # Shared research: companies/, market/, sector-companies.md
-│   └── settings.local.json  # Claude Code environment config (gitignored)
+│   └── talent-sourcing.template.md  # Company config template (copy to talent-sourcing.local.md)
 ├── roles/                   # Per-role work products (created per search)
 ├── reports/                 # Multi-role reports and dashboards
 ├── CLAUDE.md                # Project architecture and agent instructions
@@ -82,7 +82,7 @@ roles/[role-name]/
 | `lead-researcher` | Shared | Individual candidate deep-dives, background research, fit assessment |
 | `report-generator` | Shared | Stakeholder reports, HTML dashboards with Chart.js, pipeline updates |
 
-Agents trigger automatically based on what you ask. Requesting a JD launches the sourcing specialist. Pasting an interview transcript launches the evaluation specialist. See `.claude/rules/agents.md` for the full auto-trigger table.
+Quick, single-step requests (rewrite a message, tweak a search string) are handled inline with the matching skill. Multi-step deliverables launch a specialist agent: requesting a new JD launches the sourcing specialist, pasting an interview transcript launches the evaluation specialist. See `.claude/rules/agents.md` for the launch criteria.
 
 ## Skills
 
@@ -105,7 +105,6 @@ Skills are domain knowledge modules that auto-inject into agents via YAML frontm
 | `hiring-quality` | QoH surveys, retrospectives, onboarding checklists |
 | `stakeholder-reporting` | Report and dashboard templates |
 | `stop-slop` | AI writing pattern removal for professional prose |
-| `skill-creator` | Guide for creating new skills |
 
 ## Getting Started
 
@@ -126,7 +125,7 @@ git clone <repo-url> && cd recruiting
 2. Create your company context file:
 
 ```bash
-cp .claude/talent-sourcing-template.local.md .claude/talent-sourcing.local.md
+cp .claude/talent-sourcing.template.md .claude/talent-sourcing.local.md
 ```
 
 Edit `.claude/talent-sourcing.local.md` with your company details — name, industry, locations, EVP, target companies, and compensation philosophy. This file is gitignored.

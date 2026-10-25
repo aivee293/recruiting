@@ -40,32 +40,37 @@
 | candidate-comms | Stage-based candidate communications, rejection frameworks, offer scripts | Any candidate communication during interview process |
 | hiring-quality | QoH surveys, HM/candidate experience surveys, retrospectives, onboarding | Post-close quality measurement and improvement |
 
-## Auto-Trigger Rules (MANDATORY)
+## When to Launch an Agent vs. Use a Skill Inline
 
-ALWAYS spawn these agents automatically — no user prompt needed:
+Each agent starts with a fresh context and loads 2–5 skills (roughly 15–50 KB of instructions) before doing any work. That cost is worth paying for multi-step deliverables, not for quick questions.
 
-| Trigger | Agent | When |
-| ------- | ----- | ---- |
-| Any recruiting/sourcing task detected | senior-sourcing-specialist | IMMEDIATELY |
-| New role opened or JD requested | senior-sourcing-specialist (jd-writing skill) | BEFORE persona building |
-| New role, brief, or JD dropped | persona-builder | BEFORE sourcing begins |
-| Individual candidate mentioned | lead-researcher | BEFORE outreach |
-| Outreach or messaging needed | outreach-specialist | AFTER persona exists |
-| Compensation or market question | market-analyst | IMMEDIATELY |
-| Report or dashboard requested | report-generator | AFTER sourcing data exists |
-| Candidate reaches Screening in pipeline | senior-talent-partner | IMMEDIATELY |
-| Interview process design requested | senior-talent-partner + interview-architect | BEFORE interviews |
-| Scorecard or screening guide requested | interview-architect | AFTER JD + persona exist |
-| Interview transcript pasted or shared | evaluation-specialist | IMMEDIATELY (produces teamtailor-scorecard + screen-evaluation) |
-| Interview feedback received | evaluation-specialist | AFTER interviews happen |
-| Candidate comparison or debrief | evaluation-specialist | AFTER multiple candidates interviewed |
-| Offer stage reached | offer-strategist | AFTER evaluation decision |
-| Candidate communication (interview stage) | senior-talent-partner (candidate-comms) | THROUGHOUT |
-| Role status → closed-filled | hiring-quality-analyst | IMMEDIATELY (retro + surveys + silver medalists) |
-| Role status → closed-cancelled | hiring-quality-analyst | IMMEDIATELY (retro only) |
-| Offer accepted | hiring-quality-analyst | IMMEDIATELY (onboarding checklist) |
-| Quality of hire / process improvement requested | hiring-quality-analyst | ANYTIME |
-| Silver medalist identification needed | hiring-quality-analyst | AFTER evaluation decision with multiple candidates |
+**Handle inline with the matching skill (no agent):**
+
+- Single, self-contained requests: rewrite an InMail, tweak one Boolean string, answer a comp question from existing `data/market/` research, draft one rejection email, review a JD paragraph
+- Follow-up edits to a deliverable that already exists in `roles/[role-name]/`
+- Questions about the toolkit itself (scope gate — see CLAUDE.md)
+
+**Launch an agent when the request produces or substantially rewrites a file deliverable**, needs fresh web research, or is one phase of a multi-phase workflow:
+
+| Request | Agent | Precondition |
+| ------- | ----- | ------------ |
+| New role opened, JD requested | senior-sourcing-specialist (jd-writing) | brief.md or HM requirements available |
+| Persona needed for a new role | persona-builder | JD exists |
+| Full sourcing plan, talent map, or search-string set | senior-sourcing-specialist | persona.md exists |
+| Candidate dossier on a named person | lead-researcher | Role exists and research purpose is recruiting (see lead-researcher privacy rules) |
+| Outreach sequence for a role | outreach-specialist | persona.md exists |
+| New market/comp research (no recent file in `data/market/`) | market-analyst | — |
+| Pipeline report or dashboard | report-generator | Pipeline data exists in brief.md |
+| Interview process design | interview-architect (with senior-talent-partner for HM calibration) | JD + persona exist |
+| Scorecards or screening guide | interview-architect | JD + persona exist |
+| Interview transcript to score | evaluation-specialist | scorecards.md exists (otherwise score against JD and say so) |
+| Candidate comparison or debrief | evaluation-specialist | Feedback for 2+ candidates |
+| Offer package or negotiation plan | offer-strategist | Evaluation decision made |
+| Retrospective, QoH surveys, silver medalists, onboarding checklist | hiring-quality-analyst | Role status is closed-* or offer accepted |
+
+**Status changes are user-reported.** The toolkit cannot observe Teamtailor, inboxes, or calendars. When the user reports a status change ("Maria accepted", "role is closed", "3 candidates moved to screening"), update `brief.md` and **suggest** the relevant next step (e.g. "Want me to run the retrospective and silver-medalist list?") rather than launching agents unprompted.
+
+When unsure whether a request warrants an agent, do the small version inline and offer the full deliverable.
 
 ## Routing Rule
 
@@ -77,9 +82,9 @@ Pipeline stage determines which domain expert or specialist to launch:
 
 When a request doesn't clearly map to a pipeline stage, use context: sourcing/search/outreach tasks → sourcing-domain agents; interview/evaluation/offer/close tasks → talent-partner-domain agents.
 
-## Parallel Task Execution (Mandatory)
+## Parallel Task Execution
 
-The **main conversation** launches agents via Task tool. ALWAYS use parallel Task calls for independent operations:
+When the main conversation launches more than one agent, run independent ones in parallel (one message, multiple Task calls):
 
 ```markdown
 # GOOD: Main conversation launches independent agents in parallel

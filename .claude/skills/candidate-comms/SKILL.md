@@ -1,6 +1,6 @@
 ---
 name: candidate-comms
-description: "This skill should be used when the user asks to write a candidate email, rejection message, schedule interview, status update, offer letter, interview confirmation, how to reject, welcome email, interview prep email, candidate update, between rounds email, onboarding email, feedback to candidate, or needs to communicate with candidates at any stage of the interview process."
+description: "Write candidate-facing messages for people already in the interview process: interview invites and confirmations, prep emails, between-round updates, rejections with feedback, and welcome emails. Use when the user needs to tell an applicant or interviewee something. Not for cold outreach to passive candidates (use candidate-outreach) or designing the offer package and negotiation (use offer-negotiation)."
 ---
 
 # Candidate Communications for Recruiting
@@ -108,6 +108,6 @@ The most important communications to get right.
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/comms-templates.md`** — Ready-to-customize templates for every stage.

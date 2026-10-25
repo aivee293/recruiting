@@ -1,6 +1,6 @@
 ---
 name: hiring-quality
-description: "This skill should be used when the user asks about quality of hire, hiring survey, candidate experience survey, HM satisfaction, retrospective, what did we learn, silver medalist, onboarding checklist, pre-boarding, post-hire, process improvement, hiring quality, search retro, hiring metrics, candidate NPS, how was the process, lessons learned, or needs to measure, analyze, or improve hiring quality at any stage."
+description: "Measure and improve hiring after a role closes: quality-of-hire, hiring-manager and candidate-experience surveys, search retrospectives, silver-medalist lists, and pre-boarding/onboarding checklists. Use when a role is filled or cancelled, or the user asks what went well or how good the hire was. Not for live pipeline reporting (use stakeholder-reporting)."
 ---
 
 # Hiring Quality for Recruiting
@@ -182,7 +182,7 @@ Close the feedback loop on hiring: measure quality of hire, capture hiring manag
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/survey-templates.md`** — Ready-to-use survey question sets for QoH, HM experience, and candidate experience.
 - **`references/retrospective-guide.md`** — Step-by-step retro facilitation guide with examples.

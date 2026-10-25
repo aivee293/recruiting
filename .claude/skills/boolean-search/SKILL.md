@@ -1,6 +1,6 @@
 ---
 name: boolean-search
-description: This skill should be used when the user asks to "build a Boolean search", "create search strings", "write LinkedIn search", "X-Ray search", "Google dork for candidates", "source on GitHub", "Stack Overflow search", "search operators", "Boolean operators for recruiting", "platform-specific search syntax", or needs to construct candidate search queries for any sourcing platform.
+description: "Build ready-to-paste candidate search strings: LinkedIn/Recruiter Boolean, Google X-Ray, GitHub, Stack Overflow, and other platform-specific operators. Use when the user asks for search strings, Boolean, X-Ray, or how to find candidates on a specific platform. Not for deciding which channels or companies to target (use sourcing-plan or talent-mapping)."
 ---
 
 # Boolean Search Construction for Talent Sourcing
@@ -465,7 +465,7 @@ When generating Boolean strings, provide:
 
 ### Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 For platform-specific advanced techniques:
 - **`references/advanced-operators.md`** - Full operator reference per platform with edge cases, including AROUND(n), inanchor:, imagesize:, emoji search, country subdomains, and keyword repetition

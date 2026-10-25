@@ -1,6 +1,6 @@
 ---
 name: talent-mapping
-description: This skill should be used when the user asks to "map the talent landscape", "identify talent pools", "find target companies", "competitor mapping", "organizational mapping", "talent pool sizing", "build a talent map", "identify hiring competitors", "map where candidates work", or needs to systematically analyze where target candidates are employed, concentrated, or moving.
+description: "Map where target candidates work: concentric-circle target-company lists, competitor and adjacent-industry mapping, org-structure research, talent-flow analysis, and pool sizing. Use when the user asks which companies to source from or how many candidates exist. Not for search strings (use boolean-search) or comp data (use market-research)."
 ---
 
 # Talent Mapping for Recruiting Sourcing
@@ -145,7 +145,7 @@ A talent map deliverable should include:
 
 ### Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 For detailed mapping techniques:
 - **`references/company-research-methods.md`** - How to research company structure and team composition

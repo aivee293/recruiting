@@ -1,6 +1,6 @@
 ---
 name: persona-research
-description: This skill should be used when the user asks to "build a candidate persona", "create an ideal candidate profile", "define who we're looking for", "candidate motivations", "career patterns", "where do candidates hang out", "candidate persona", "ideal profile", or needs to develop a detailed picture of the target candidate beyond just skills and experience requirements.
+description: "Build the internal ideal-candidate persona for a role: background patterns, motivations, deal-breakers, career moves, and where these people spend time online. Use at role kickoff or when sourcing results miss the mark. Not for the public job posting (use jd-writing)."
 ---
 
 # Persona Research for Recruiting Sourcing
@@ -270,7 +270,7 @@ fill this role from a different background]
 
 ### Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/persona-templates.md`** - Complete persona templates for different role types (engineering, data/ML, product, design, GTM: sales/AE, SDR/BDR, product marketing, growth/demand gen, customer success, RevOps, partnerships/BD, executive)
 - **`references/motivation-frameworks.md`** - Detailed frameworks for understanding candidate motivations and decision-making
