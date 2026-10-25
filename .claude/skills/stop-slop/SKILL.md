@@ -1,6 +1,6 @@
 ---
 name: stop-slop
-description: Remove AI writing patterns from prose. This skill should be used when drafting, editing, or reviewing text to eliminate predictable AI tells. Register-aware — handles casual, professional, academic, technical, and narrative writing.
+description: "Remove AI writing patterns from prose, adjusted for register (casual, professional, academic, technical, narrative). Use when drafting, editing, or reviewing any user-facing text, or when the user says something sounds AI-written."
 ---
 
 # Stop Slop
@@ -76,7 +76,7 @@ Before delivering prose:
 
 ## Reference files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 | File | Purpose |
 |------|---------|

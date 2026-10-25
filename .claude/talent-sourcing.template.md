@@ -18,6 +18,7 @@ report_branding: ""
 company_size: 
 company_stage: ""
 startup_fit_sourcing:                                    # true or false
+dossier_retention_days:                                  # e.g. 180 — see "Candidate Data Retention"
 ---
 
 # Talent Sourcing Configuration
@@ -45,3 +46,14 @@ Fill in the frontmatter fields above with your company details:
 
 - **outreach_tone**: Tone for messaging suggestions ("professional", "casual", "technical")
 - **report_branding**: Company name/logo reference for dashboard headers
+
+## Notes on Target Company List
+
+Optional. Use this section to describe how `target_companies` (curated top-20) relates to the full directory in `.claude/data/sector-companies.md`:
+
+- **Segments**: how you group companies (e.g., direct competitors, adjacent industries, talent exporters)
+- **Per-role expansion**: when to pull additional companies from the directory for a specific role
+
+## Candidate Data Retention
+
+- **dossier_retention_days**: How long candidate dossiers in `roles/*/candidates/` are kept after a role closes (e.g., 180). Set per your privacy notice and local law. Agents remind you to delete expired dossiers during the post-close retrospective.

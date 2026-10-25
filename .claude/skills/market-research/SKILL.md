@@ -1,6 +1,6 @@
 ---
 name: market-research
-description: This skill should be used when the user asks about "compensation benchmarks", "salary data", "market trends", "talent supply and demand", "hiring landscape", "market research for recruiting", "compensation analysis", "talent availability", "hiring difficulty", "market rate", or needs to understand the labor market dynamics for a specific role, function, or geography.
+description: "Research labor-market data for a role and location: salary and total-comp benchmarks, talent supply and demand, hiring difficulty, and competing employers. Use when the user asks what a role pays or how hard it will be to hire. Not for packaging a specific candidate's offer (use offer-negotiation) or mapping individual target companies (use talent-mapping)."
 ---
 
 # Market Research for Recruiting Sourcing
@@ -175,7 +175,7 @@ Always note:
 
 ### Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 For detailed methodology:
 - **`references/data-sources-guide.md`** - Complete guide to compensation and market data sources with access methods

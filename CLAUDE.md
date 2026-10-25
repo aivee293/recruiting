@@ -1,11 +1,11 @@
 # Philosophy
 
-Agent-first design, parallel execution, plan before action.
+Right-sized delegation, parallel execution, plan before action.
 
 **Key Principles:**
 
-1. **Agent-First**: Delegate recruiting tasks to specialized agents (skills auto-load via frontmatter)
-2. **Parallel Execution**: Use Task tool with multiple agents when possible for independent operations
+1. **Right-Sized Delegation**: Answer quick, single-step requests inline using the matching skill. Delegate multi-step deliverables to specialized agents (skills auto-load via frontmatter). See `.claude/rules/agents.md` → "When to Launch an Agent vs. Use a Skill Inline"
+2. **Parallel Execution**: When launching multiple agents, run independent ones in parallel
 3. **Plan Before Execute**: Use Plan Mode for complex operations
 
 ---
@@ -18,7 +18,7 @@ A **talent sourcing and recruiting toolkit** — agents and skills that produce 
 
 ## Architecture
 
-All agent/skill catalogs, trigger rules, parallel execution patterns, and dependency ordering: `.claude/rules/agents.md`
+All agent/skill catalogs, launch criteria, parallel execution patterns, and dependency ordering: `.claude/rules/agents.md`
 
 ### Work Product Directory Structure
 
@@ -71,7 +71,7 @@ Multi-role reports go to a top-level `reports/` directory.
 
 **Write rule:** Agents propose saving to `data/`; user confirms. Agents always check `data/` for prior research before starting new work.
 
-The YAML `target_companies` in `talent-sourcing.local.md` is the curated top-20 for quick Boolean generation. `data/` is the full directory.
+The YAML `target_companies` in `.claude/talent-sourcing.local.md` is the curated top-20 for quick Boolean generation. `data/` is the full directory.
 
 ### Role Lifecycle
 
@@ -185,7 +185,7 @@ Two domain expert groups divide the pipeline:
 - **Talent partner domain** (Screening → Offer → closed): `senior-talent-partner`, `interview-architect`, `evaluation-specialist`, `offer-strategist`, `hiring-quality-analyst`
 - **Shared agents**: `market-analyst`, `lead-researcher`, `report-generator` (available to either domain)
 
-The main conversation chains agents phase by phase (sequential for dependent ops, parallel for independent ops). See `.claude/rules/agents.md` for the full workflow phases, dependency table, and auto-trigger rules.
+The main conversation chains agents phase by phase (sequential for dependent ops, parallel for independent ops). See `.claude/rules/agents.md` for the full workflow phases, dependency table, and launch criteria.
 
 **Scope gate:** Non-recruiting tasks (file operations, configuration questions, general discussion) skip agent orchestration entirely. Only activate recruiting agents when the task involves hiring, candidates, roles, or recruiting deliverables.
 
@@ -193,7 +193,7 @@ The main conversation chains agents phase by phase (sequential for dependent ops
 
 ### Company Configuration
 
-`.claude/talent-sourcing.local.md` stores per-user company context (YAML frontmatter): company name, industry, locations, EVP, preferred sourcing channels, compensation philosophy, target companies, and reporting preferences. This file is gitignored (`.local.md`). Agents read this file to tailor their output.
+`.claude/talent-sourcing.local.md` stores per-user company context (YAML frontmatter). Create it by copying `.claude/talent-sourcing.template.md`. It holds company name, industry, locations, EVP, preferred sourcing channels, compensation philosophy, target companies, and reporting preferences. This file is gitignored (`.local.md`). Agents read this file to tailor their output.
 
 ### Fallback Behavior
 

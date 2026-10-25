@@ -6,3 +6,6 @@ __pycache__/
 # Claude Code local settings (user-specific, not for sharing)
 .claude/*.local.md
 .claude/*.local.json
+
+# Windows download metadata
+*Zone.Identifier

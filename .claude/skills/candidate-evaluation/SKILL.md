@@ -1,6 +1,6 @@
 ---
 name: candidate-evaluation
-description: "This skill should be used when the user asks to evaluate candidates, compare candidates, debrief, hiring decision, candidate comparison, synthesize feedback, candidate ranking, who should we hire, summarize interviews, interview debrief, candidate assessment, score this transcript, metaview transcript, score this screen, score this interview, rate this candidate, transcript evaluation, interview scoring, or needs to aggregate interview feedback, score an interview transcript against a scorecard, facilitate hiring decisions, or compare candidates against each other."
+description: "Score interview transcripts against a scorecard, synthesize interviewer feedback, compare candidates side by side, and run bias-checked debriefs toward a hire/no-hire recommendation. Use when the user pastes a transcript (e.g. from Metaview) or interviewer feedback, or asks who to hire. Not for building the scorecard itself (use interview-kit)."
 ---
 
 # Candidate Evaluation for Recruiting
@@ -256,7 +256,7 @@ Standard structure for candidate evaluation deliverables saved to `roles/[role-n
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/decision-frameworks.md`** — Weighted scorecard method, bar-raiser approach, portfolio hiring, consensus vs veto models.
 - **`references/bias-checklist.md`** — Pre-debrief and during-debrief bias check questions.

@@ -1,6 +1,6 @@
 ---
 name: interview-kit
-description: "This skill should be used when the user asks to create scorecard, build rubric, interview questions for, screening guide, phone screen script, behavioral questions, question bank, calibration exercise, rating scale, competency rubric, interview prep, interviewer training, or needs to build evaluation tools for any interview stage."
+description: "Build the evaluation tools for interview stages: scorecards, competency rubrics, rating scales, question banks, phone-screen scripts, calibration exercises, and Teamtailor kit setup. Use when the user asks for interview questions, a scorecard, or a screening guide. Not for the stage-by-stage process (use interview-design) or scoring a finished interview (use candidate-evaluation)."
 ---
 
 # Interview Kit for Recruiting
@@ -281,7 +281,12 @@ This is the ATS translation layer. `scorecards.md` defines *what* to assess and 
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
-- **`references/scorecard-templates.md`** — Complete scorecard examples by role family and interview stage, ready to customize.
+- **`references/scorecard-templates.md`** — Rating scale, usage steps, the Traits Section template, and an index of the per-family template files. Read this first, then only the family file(s) you need:
+  - `references/scorecards-universal.md` — recruiter screen, behavioral, bar raiser / culture
+  - `references/scorecards-engineering.md` — technical deep-dive, system design, live coding
+  - `references/scorecards-product-gtm.md` — case study, sales role play
+  - `references/scorecards-leadership.md` — leadership assessment (Manager+)
+  - `references/scorecards-design.md` — portfolio review
 - **`references/teamtailor-setup.md`** — ATS setup patterns: Job Evaluation section, interview kits, observation prompts, kit-to-stage assignment, scoring math, and the trait-at-every-stage rule. Read this before generating any `teamtailor-setup.md` for a role.

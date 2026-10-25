@@ -1,6 +1,6 @@
 ---
 name: jd-writing
-description: "This skill should be used when the user asks to write a JD, create a job description, draft job posting, JD for [role], job spec, role description, write a role profile, help me define a role, or needs to create, rewrite, or improve a job description for any function or level."
+description: "Write, rewrite, or audit job descriptions and job postings, including inclusive-language and requirement-inflation checks. Use when the user asks for a JD, job post, or role profile, or to improve an existing one. Not for the internal candidate persona (use persona-research)."
 ---
 
 # Job Description Writing
@@ -257,7 +257,7 @@ mkdir -p roles/[role-name]/candidates roles/[role-name]/reports
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/anti-patterns.md`** — Before/after examples of common JD mistakes to avoid: vague requirements, task lists, requirement inflation, jargon, and more.
 - **`references/inclusive-language.md`** — Comprehensive bias detection checklist organized by type: gendered, age-coded, ability-coded, culture-coded, and requirement inflation.

@@ -1,6 +1,6 @@
 ---
 name: stakeholder-reporting
-description: This skill should be used when the user asks to "create a sourcing report", "build a dashboard", "generate a pipeline update", "update for hiring manager", "stakeholder report", "sourcing metrics", "pipeline report", "weekly sourcing update", "market insights report", "talent map presentation", or needs to compile sourcing data into structured reports or visual dashboards for stakeholders.
+description: "Turn sourcing and pipeline data into stakeholder deliverables: weekly pipeline updates, hiring-manager reports, market-insight reports, talent-map presentations, and self-contained HTML dashboards. Use when the user wants to report progress or share findings. Not for post-close retrospectives (use hiring-quality)."
 ---
 
 # Stakeholder Reporting for Recruiting Sourcing
@@ -262,7 +262,7 @@ If Puppeteer is unavailable:
 
 ### Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/brandguidelines.pdf`** - your brand guidelines
 - **`references/market-insights-template.md`** - Branded HTML template for market insights reports (PDF-ready)

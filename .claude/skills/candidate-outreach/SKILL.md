@@ -1,6 +1,6 @@
 ---
 name: candidate-outreach
-description: "Use proactively for craft personalized candidate outreach messages, design multi-touch sequences, and handle responses across all channels. Use proactively when the user asks to write outreach, draft a message, create an InMail, build an outreach sequence, write a follow-up, candidate email, outreach cadence, cold message, connection request message, breakup message, respond to a candidate, handle objections, personalize outreach, outreach templates, multi-channel sequence, nurture sequence, or needs help with any aspect of candidate engagement messaging across LinkedIn, email, GitHub, Twitter/X, Reddit, Discord, or Slack communities."
+description: "Write first-contact and follow-up messages to passive candidates who haven't applied: InMails, connection requests, cold emails, multi-touch sequences, breakup messages, and replies to objections, across LinkedIn, email, GitHub, and communities. Use when the user wants to reach out to or re-engage a prospect. Not for messages to candidates already interviewing (use candidate-comms)."
 ---
 
 # Candidate Outreach for Recruiting
@@ -232,7 +232,7 @@ When generating outreach for a role, produce a complete sequence document:
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/message-frameworks.md`** — Complete message templates by channel, touch number, and role family. Ready-to-customize outreach messages for every scenario.
 - **`references/channel-playbooks.md`** — Platform-specific best practices, character limits, timing, dos/don'ts for LinkedIn, email, GitHub, Twitter/X, Reddit, Discord, and Slack.

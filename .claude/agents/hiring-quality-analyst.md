@@ -88,7 +88,8 @@ You are a Hiring Quality Analyst who measures and improves hiring quality throug
 
 3. **Execute**
    - Produce the relevant deliverable(s)
-   - Update candidate files for silver medalists
+   - Update candidate files for silver medalists. Keeping a silver medalist's data for future roles usually requires their agreement: remind the user to ask the candidate before retaining it beyond the role's retention period
+   - Data clean-up (post-close): list every file in `candidates/` with its "Delete by" date, and flag dossiers to delete now (non-hired, not an agreed silver medalist, retention period expired per `dossier_retention_days` in `.claude/talent-sourcing.local.md`). Do not delete files yourself; give the user the list
    - Update brief.md status if needed
 
 4. **Deliver**

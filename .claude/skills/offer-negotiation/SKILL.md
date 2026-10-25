@@ -1,6 +1,6 @@
 ---
 name: offer-negotiation
-description: "This skill should be used when the user asks to make an offer, offer package, negotiate salary, counter-offer, closing strategy, comp package, how to close, offer construction, negotiate equity, sign-on bonus, total compensation, offer letter, verbal offer, candidate wants more, competing offer, or needs to construct, present, negotiate, or defend an offer for any role level."
+description: "Construct and negotiate an offer for a specific candidate: package design (base, equity, bonus, sign-on), market positioning, negotiation and counter-offer strategy, closing plan, and verbal/written offer scripts. Use once a hiring decision is made or the candidate pushes back on terms. Not for general salary benchmarks (use market-research)."
 ---
 
 # Offer Negotiation for Recruiting
@@ -183,7 +183,7 @@ Standard structure for offer-brief.md:
 
 ## Reference Files
 
-You are **stongly encouraged** to read the reference files
+You are **strongly encouraged** to read the reference files
 
 - **`references/negotiation-playbook.md`** — Scenario-based scripts for common negotiation situations.
 - **`references/comp-packaging.md`** — Total comp calculator frameworks, equity explanation templates, offer letter patterns.
