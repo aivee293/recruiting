@@ -1,0 +1,580 @@
+{
+  "filters": {
+    "role": "Fleet Specialist / Fleet Operations Driver / Driver-Mechanic",
+    "title_variants": [
+      "Fleet Specialist",
+      "Fleet Specialist (Driver)",
+      "Fleet Specialist (Mechanic)",
+      "Fleet Specialist Associate",
+      "Fleet Operations Driver",
+      "Fleet Operations Assistant",
+      "Driver/Mechanic",
+      "Mechanic",
+      "Scooter Mechanic",
+      "Lead Mechanic",
+      "Operations Associate",
+      "Operations Specialist",
+      "Senior Lead Operations Specialist",
+      "Juicer (legacy)",
+      "Fahrer (m/w/d)",
+      "Mechaniker",
+      "Kierowca/Mechanik"
+    ],
+    "skills_assumed": {
+      "must": [
+        "Class B licence",
+        "van driving",
+        "e-scooter/e-bike handling",
+        "battery swaps"
+      ],
+      "nice": [
+        "mechanical repair/diagnostics",
+        "warehouse/workshop"
+      ]
+    },
+    "location": "Europe (EU + UK + Nordics + CH)",
+    "industry": "Shared micromobility",
+    "years_experience": "0-2 (assumed)",
+    "languages": "Local and/or English",
+    "exclusions": null,
+    "boolean": "(\"fleet specialist\" OR \"fleet operations\" OR \"driver/mechanic\" OR \"scooter mechanic\" OR juicer) AND (Voi OR Dott OR TIER OR Lime OR Bolt OR Bird OR Ryde OR Zeus OR Cooltra OR felyx)",
+    "date": "2026-10-27",
+    "sources_policy": "Public web sources only",
+    "confidence": "High",
+    "sources": []
+  },
+  "overview": {
+    "open_posts_found": ">=36 (sample)",
+    "by_employer": {
+      "Voi": 12,
+      "Bolt": 12,
+      "Dott": 8,
+      "Lime": 4
+    },
+    "pool_size": "Not available publicly",
+    "hiring_demand": "Medium-High, uneven by city",
+    "demand_reason": "Operator growth (Voi Q2'26 +47% revenue, Dott 45k new vehicles, Lime IPO) offset by seasonal/fixed-term hiring and city bans",
+    "confidence": "Medium",
+    "sources": [
+      "https://zagdaily.com/micromobility/voi-reveals-no-concrete-plans-for-ipo-after-strong-q2-results/",
+      "https://thenextweb.com/news/lime-ipo-priced-25-dollars-nasdaq"
+    ]
+  },
+  "locations": {
+    "items": [
+      {
+        "country": "Germany",
+        "cities": [
+          "Berlin",
+          "Hamburg",
+          "Munich",
+          "Nürnberg",
+          "Cologne",
+          "Lübeck",
+          "Dortmund",
+          "Halle",
+          "Langenfeld",
+          "Wiesbaden",
+          "Wolfsburg",
+          "Bielefeld",
+          "Kiel",
+          "Müglitztal",
+          "Mannheim"
+        ],
+        "employers": [
+          "Voi",
+          "Bolt",
+          "Dott",
+          "Lime"
+        ]
+      },
+      {
+        "country": "UK",
+        "cities": [
+          "London",
+          "Northampton",
+          "Cambridge"
+        ],
+        "employers": [
+          "Voi",
+          "Lime",
+          "Zoomo"
+        ]
+      },
+      {
+        "country": "Austria",
+        "cities": [
+          "Vienna",
+          "Klagenfurt-Villach"
+        ],
+        "employers": [
+          "Voi",
+          "Dott"
+        ]
+      },
+      {
+        "country": "Nordics",
+        "cities": [
+          "Stockholm",
+          "Helsinki",
+          "Turku",
+          "Copenhagen"
+        ],
+        "employers": [
+          "Bolt",
+          "Voi",
+          "Dott"
+        ]
+      },
+      {
+        "country": "Poland",
+        "cities": [
+          "Kraków"
+        ],
+        "employers": [
+          "Dott"
+        ]
+      },
+      {
+        "country": "Hungary",
+        "cities": [
+          "Budapest"
+        ],
+        "employers": [
+          "Dott"
+        ]
+      },
+      {
+        "country": "Spain",
+        "cities": [
+          "Tarragona"
+        ],
+        "employers": [
+          "Dott"
+        ]
+      },
+      {
+        "country": "Italy",
+        "cities": [
+          "Rome"
+        ],
+        "employers": [
+          "Lime"
+        ]
+      },
+      {
+        "country": "France",
+        "cities": [
+          "Paris"
+        ],
+        "employers": [
+          "Dott",
+          "Voi",
+          "Lime"
+        ]
+      }
+    ],
+    "confidence": "Medium",
+    "sources": [
+      "https://www.ziprecruiter.de/jobs/545507467-fleet-specialist-m-f-d-bei-voi-technology",
+      "https://careers.speedinvest.com/companies/dott/jobs/88898686-mechanik-mechanic-all-genders-w-krakowie"
+    ]
+  },
+  "location_flow": {
+    "items": [
+      {
+        "signal": "Prague ends shared e-scooter rentals Jan 2026",
+        "direction": "supply freed"
+      },
+      {
+        "signal": "Brussels licences annulled, removal by 1 Sep 2026; full ban 1 Jan 2027",
+        "direction": "supply freed now"
+      },
+      {
+        "signal": "Colchester: Dott contract ended Aug 2025, Voi named",
+        "direction": "operator-to-operator (verify)"
+      },
+      {
+        "signal": "Paris e-bike tender: Voi +6,000 bikes",
+        "direction": "demand up"
+      },
+      {
+        "signal": "Dott post-merger cost cuts then 45k-vehicle refresh",
+        "direction": "mixed"
+      },
+      {
+        "signal": "Seasonal fixed-term contracts end Oct-Nov",
+        "direction": "seasonal supply"
+      }
+    ],
+    "confidence": "Low",
+    "sources": [
+      "https://www.euronews.com/next/2025/10/21/prague-to-ban-e-scooters-from-2026-amid-chaos-on-sidewalks",
+      "https://micromobility.io/news/more-chaos-for-shared-micromobility-in-brussels",
+      "https://www.electrive.com/2025/06/12/voi-dott-and-lime-win-paris-e-bike-sharing-tender"
+    ]
+  },
+  "companies": {
+    "items": [
+      {
+        "company": "Voi",
+        "stage": "Late-stage private; FY25 rev €178.2M; Q2'26 EBIT €9.9M",
+        "posts": 12,
+        "growth": "Strong"
+      },
+      {
+        "company": "Dott (incl. TIER)",
+        "stage": "Private; FY25 rev €173M; €85M funding",
+        "posts": 8,
+        "growth": "Fleet refresh 45k vehicles"
+      },
+      {
+        "company": "Bolt",
+        "stage": "Late-stage private",
+        "posts": 12,
+        "growth": "Micromobility trips +8% 2025"
+      },
+      {
+        "company": "Lime",
+        "stage": "Public (Nasdaq: LIME, Jul 2026); 2025 rev $886.7M",
+        "posts": 4,
+        "growth": "IPO capital"
+      },
+      {
+        "company": "Ryde",
+        "stage": "Growth",
+        "posts": 0,
+        "growth": "Entered Germany, 2,500 scooters"
+      },
+      {
+        "company": "Zeus",
+        "stage": "Growth; 50+ locations, 9 countries",
+        "posts": 0,
+        "growth": "Acquisitive"
+      },
+      {
+        "company": "Cooltra/felyx",
+        "stage": "Merged 2024; 30k+ e-mopeds",
+        "posts": 0,
+        "growth": "Unclear"
+      },
+      {
+        "company": "Zoomo",
+        "stage": "E-bike fleets",
+        "posts": 1,
+        "growth": "n/a"
+      }
+    ],
+    "confidence": "Medium",
+    "sources": [
+      "https://www.mfn.se/a/voitechnology/voi-technology-ab-publ-publishes-fourth-quarter-and-full-year-report-2025",
+      "https://zagdaily.com/trends/tier-dott-is-born/",
+      "https://zagdaily.com/micromobility/bolt-records-8-growth-in-micromobility-trips-in-2025/",
+      "https://www.renaissancecapital.com/IPO-Center/News/118890/E-scooter-rental-platform-Lime-files-for-an-estimated-$250-million-IPO"
+    ]
+  },
+  "titles": {
+    "items": [
+      {
+        "title": "Fleet Specialist (variants)",
+        "employers": [
+          "Voi"
+        ],
+        "ads": 10
+      },
+      {
+        "title": "Fleet Operations Driver",
+        "employers": [
+          "Bolt"
+        ],
+        "ads": 10
+      },
+      {
+        "title": "Driver/Mechanic",
+        "employers": [
+          "Dott"
+        ],
+        "ads": 5
+      },
+      {
+        "title": "Mechanic / Scooter Mechanic / Lead Mechanic",
+        "employers": [
+          "Dott",
+          "Bolt"
+        ],
+        "ads": 4
+      },
+      {
+        "title": "Operations Associate",
+        "employers": [
+          "Lime"
+        ],
+        "ads": 3
+      },
+      {
+        "title": "Fleet Operations Assistant",
+        "employers": [
+          "Bolt"
+        ],
+        "ads": 2
+      },
+      {
+        "title": "Fleet Specialist Associate",
+        "employers": [
+          "Voi"
+        ],
+        "ads": 2
+      },
+      {
+        "title": "Senior Lead Operations Specialist",
+        "employers": [
+          "Lime"
+        ],
+        "ads": 1
+      }
+    ],
+    "confidence": "Medium",
+    "sources": []
+  },
+  "growing_titles": {
+    "items": [
+      "Hybrid Driver+Mechanic replacing freelance juicer model",
+      "E-bike mechanic (hypothesis, tender-driven)"
+    ],
+    "confidence": "Low",
+    "sources": [
+      "https://www.test.de/E-Scooter-mieten-Circ-Lime-Tier-und-Voi-im-Check-5506008-5509163/"
+    ]
+  },
+  "skills": {
+    "items": [
+      {
+        "skill": "Class B licence (often 2+ yrs)",
+        "frequency": "most driver ads"
+      },
+      {
+        "skill": "Van deployment/rebalancing",
+        "frequency": "all driver ads"
+      },
+      {
+        "skill": "Battery swaps/charging",
+        "frequency": "most"
+      },
+      {
+        "skill": "On-street repairs and safety checks",
+        "frequency": "most"
+      },
+      {
+        "skill": "Workshop diagnosis/repair",
+        "frequency": "all mechanic/hybrid ads"
+      },
+      {
+        "skill": "Shift work incl. nights/weekends",
+        "frequency": "most"
+      },
+      {
+        "skill": "EU work permit, 18+",
+        "frequency": "Dott ads"
+      },
+      {
+        "skill": "Local language/English",
+        "frequency": "some"
+      }
+    ],
+    "confidence": "Medium (presence), Low (frequency)",
+    "sources": []
+  },
+  "growing_skills": {
+    "items": [
+      "E-bike electrical diagnostics",
+      "New vehicle model handling during fleet refresh",
+      "App-based task tools"
+    ],
+    "confidence": "Low",
+    "sources": [
+      "https://electrek.co/?p=487135"
+    ]
+  },
+  "industries": {
+    "items": [
+      "Shared micromobility",
+      "E-moped sharing",
+      "E-bike subscription/courier fleets",
+      "Bike retail and workshops"
+    ],
+    "confidence": "Medium",
+    "sources": [
+      "https://worksterjobs.teamtailor.com/jobs/7403532-e-bike-mechanic-amsterdam"
+    ]
+  },
+  "industry_flow": {
+    "items": [
+      {
+        "from": "Last-mile delivery / quick commerce",
+        "to": "micromobility",
+        "type": "hypothesis"
+      },
+      {
+        "from": "Bike/car workshops",
+        "to": "micromobility",
+        "type": "hypothesis"
+      },
+      {
+        "from": "Students",
+        "to": "micromobility",
+        "type": "hypothesis"
+      },
+      {
+        "from": "micromobility",
+        "to": "Logistics/warehouse/car-sharing ops",
+        "type": "hypothesis"
+      },
+      {
+        "from": "Operator",
+        "to": "Operator (same city)",
+        "type": "hypothesis"
+      }
+    ],
+    "confidence": "Low",
+    "sources": [
+      "https://www.lsa-conso.fr/quick-commerce-flink-quitte-la-france,455404"
+    ]
+  },
+  "education": {
+    "items": [
+      "No degree requirement in any ad",
+      "DACH: Zweiradmechatroniker apprenticeship",
+      "UK: Level 2 bicycle mechanic apprenticeship (Zoomo)",
+      "EU TWIN e-bike mechanic qualification (12 countries)",
+      "ECI proposed pan-European standard"
+    ],
+    "confidence": "Medium",
+    "sources": [
+      "https://electrek.co/?p=487135",
+      "https://www.innovam.nl/best-practices/case-setting-the-standard-for-e-bike-training-in-europe",
+      "https://www.findapprenticeship.service.gov.uk/apprenticeship/VAC1000328453"
+    ]
+  },
+  "comp": {
+    "items": [
+      {
+        "market": "UK London",
+        "role": "Voi Fleet Specialist (6-mo FTC)",
+        "figure": "£29,713/yr (~£14.3-15.2/h)",
+        "source": "https://opportunities.hackney.gov.uk/?p=23478"
+      },
+      {
+        "market": "UK",
+        "role": "Voi warehouse",
+        "figure": "£14.14/h (n=3)",
+        "source": "https://uk.indeed.com/cmp/Voi-Technology/salaries"
+      },
+      {
+        "market": "AT Klagenfurt",
+        "role": "Dott Mechanic & Driver",
+        "figure": "€25,500 gross/yr",
+        "source": "https://job-boards.greenhouse.io/ridedott-ground-roles/jobs/4863725004"
+      },
+      {
+        "market": "PL Kraków",
+        "role": "Dott Mechanic/Driver",
+        "figure": "PLN 32-34/h (Aug 2026)",
+        "source": "https://careers.speedinvest.com/companies/dott/jobs/88898686-mechanik-mechanic-all-genders-w-krakowie"
+      },
+      {
+        "market": "DE",
+        "role": "Bolt Fleet Ops Driver",
+        "figure": "~€12-13/h (2024 estimate, now below minimum)",
+        "source": "https://www.wandernundmehr.at/faq/wie-viel-zahlt-bolt"
+      },
+      {
+        "market": "DE",
+        "role": "Statutory minimum",
+        "figure": "€13.90/h 2026; €14.60 2027",
+        "source": "https://www.playroll.com/minimum-wage/germany"
+      }
+    ],
+    "working_estimate": {
+      "DE": "€14-16/h",
+      "UK": "£12.71-15/h (NLW unverified)",
+      "AT": "€25-28k/yr",
+      "PL": "PLN 31-35/h",
+      "lead_premium": "+15-30%",
+      "label": "Low confidence inference"
+    },
+    "pay_transparency": "Few EU states transposed by 7 Jun 2026; Austria already mandates salary in ads",
+    "confidence": "Low-Medium",
+    "sources": [
+      "https://assessio.com/articles/pay-transparency-directive-country-tracker/"
+    ]
+  },
+  "sourcing_angles": {
+    "priority_targets": [
+      "Brussels fleet teams (Bolt, Dott, Voi)",
+      "Prague ex-fleet staff",
+      "Seasonal fixed-term contracts ending Oct-Nov",
+      "Ex-TIER third-party ops contractors",
+      "Losing operators after city tenders"
+    ],
+    "channels": [
+      "Indeed",
+      "HeyJobs",
+      "StepStone",
+      "UK DWP Find a Job",
+      "AMS",
+      "Pracuj.pl",
+      "InfoJobs",
+      "Duunitori",
+      "VC portfolio job boards",
+      "Temp agencies (YoungCapital, Workster)",
+      "Local Facebook/Telegram groups",
+      "Referrals"
+    ],
+    "events": [
+      "Micromobility Europe 2026 (Berlin) - intel only"
+    ],
+    "strings": {
+      "xray": "site:linkedin.com/in (\"fleet specialist\" OR \"fleet operations driver\" OR \"driver/mechanic\" OR \"scooter mechanic\" OR \"juicer\") (Voi OR Dott OR TIER OR Lime OR Bolt OR Bird) (Berlin OR Hamburg OR München OR Wien)",
+      "linkedin": "(\"fleet specialist\" OR \"fleet operations\" OR \"fleet technician\" OR \"driver mechanic\" OR \"scooter mechanic\" OR \"e-bike mechanic\" OR \"operations associate\") AND (Voi OR Dott OR TIER OR Lime OR Bolt OR Bird OR Ryde OR Zeus OR Cooltra OR felyx OR Zoomo OR \"micromobility\" OR \"e-scooter\")",
+      "xing": "(\"Fleet Specialist\" OR \"Fleet Operations\" OR Mechaniker OR Fahrer OR Juicer) AND (E-Scooter OR \"E-Bike\" OR Mikromobilität OR Voi OR Dott OR TIER OR Lime OR Bolt)",
+      "local_pl": "(\"kierowca\" OR \"mechanik\" OR \"serwisant\") (\"hulajnogi elektryczne\" OR \"rowery elektryczne\") (Dott OR Bolt OR Lime OR Voi) Kraków OR Warszawa OR Wrocław"
+    },
+    "confidence": "Medium",
+    "sources": []
+  },
+  "manual_checks": {
+    "items": [
+      "LinkedIn Talent Insights pool size/growth per city",
+      "Indeed/HeyJobs live counts and pay",
+      "Full operator ATS board counts (Voi, Dott Greenhouse, Lime Lever/Ashby, Bolt)",
+      "Glassdoor/Kununu ground-ops pay",
+      "Scooter status: Madrid, Dublin, Rome, Brussels",
+      "UK NLW April 2026 (GOV.UK)"
+    ],
+    "confidence": "n/a",
+    "sources": []
+  },
+  "confidence": {
+    "filters": "High",
+    "overview": "Medium",
+    "locations": "Medium",
+    "location_flow": "Low",
+    "companies": "Medium",
+    "titles": "Medium",
+    "growing_titles": "Low",
+    "skills": "Medium",
+    "growing_skills": "Low",
+    "industries": "Medium",
+    "industry_flow": "Low",
+    "education": "Medium",
+    "comp": "Low-Medium",
+    "sourcing_angles": "Medium",
+    "gaps": "ATS boards unreachable (network restriction); no public pool size; several undated ads",
+    "sources": []
+  },
+  "sources": {
+    "note": "Full list in the Markdown report, section 15",
+    "confidence": "n/a",
+    "sources": []
+  }
+}
